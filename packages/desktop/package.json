@@ -106,7 +106,7 @@
                 "AppImage"
             ],
             "desktop": {
-                "Name": "Firefly",
+                "Name": "Firefly Beta",
                 "Comment": "Desktop wallet for IOTA",
                 "Categories": "Office;Network;Finance"
             },
