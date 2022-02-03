@@ -19,6 +19,7 @@ public class WalletPlugin extends Plugin {
         NativeAPI.verifyLink();
     }
     private boolean isInitialized = false;
+    private static final Object lock = new Object();
 
     @PluginMethod
     public void initialize(final PluginCall call) {
@@ -37,7 +38,7 @@ public class WalletPlugin extends Plugin {
             notifyListeners("walletEvent", walletResponse);
         };
 
-        Actor.iotaInitialize(callback, actorId, "./database");
+        Actor.iotaInitialize(callback, actorId, "data/data/com.iota.wallet/cache/database");
         isInitialized = true;
     }
 
@@ -73,18 +74,20 @@ public class WalletPlugin extends Plugin {
     @PluginMethod
     public void listen(final PluginCall call) {
         if (isInitialized) return;
-        try {
-            if (!call.getData().has("actorId")
-                    || !call.getData().has("id")
-                    || !call.getData().has("event")) {
-                call.reject("actorId, id and event are required");
-                return;
+        synchronized (lock) {
+            try {
+                if (!call.getData().has("actorId")
+                        || !call.getData().has("id")
+                        || !call.getData().has("event")) {
+                    call.reject("actorId, id and event are required");
+                    return;
+                }
+                String actorId = call.getString("actorId");
+                //String event = call.getString("event");
+                Actor.iotaListen(actorId, "", EventType.valueOf("ERROR_THROWN"));
+            } catch (Exception ex) {
+                call.reject(ex.getMessage() + Arrays.toString(ex.getStackTrace()));
             }
-            String actorId = call.getString("actorId");
-            //String event = call.getString("event");
-            Actor.iotaListen(actorId, "", EventType.valueOf("ERROR_THROWN"));
-        } catch (Exception ex) {
-            call.reject(ex.getMessage() + Arrays.toString(ex.getStackTrace()));
         }
     }
 }
