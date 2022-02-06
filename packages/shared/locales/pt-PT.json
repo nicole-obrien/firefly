@@ -287,7 +287,7 @@
         "settings": {
             "settings": "Configurações",
             "generalSettings": {
-                "title": "Configurações Gerais",
+                "title": "General",
                 "description": "Configurar a aparência da sua aplicação e outras configurações gerais"
             },
             "security": {
@@ -295,7 +295,7 @@
                 "description": "Altere a sua palavra-passe e ajuste as configurações relacionadas à segurança"
             },
             "advancedSettings": {
-                "title": "Configurações Avançadas",
+                "title": "Advanced",
                 "description": "Ferramentas e configurações manuais para utilizadores técnicos"
             },
             "helpAndInfo": {
@@ -313,7 +313,7 @@
             "theme": {
                 "title": "Tema",
                 "description": "",
-                "advice": "Restart the Firefly application for changes to the system theme to take effect"
+                "advice": "Please restart the Firefly application for changes to the system theme to take effect"
             },
             "language": {
                 "title": "Idioma",
@@ -350,6 +350,11 @@
                 "newPincode": "Novo PIN",
                 "confirmNewPincode": "Confirme o novo PIN",
                 "action": "Alterar PIN"
+            },
+            "changeProfileName": {
+                "title": "Change profile name",
+                "description": "Change your Firefly profile name",
+                "success": "You changed your profile name"
             },
             "balanceFinder": {
                 "title": "Localizador de saldo",
@@ -526,6 +531,12 @@
                     "name": "Shimmer",
                     "description": "The incentivized staging network to advance major innovations on IOTA. Whatever happens, happens. How Shimmer evolves is up to you."
                 }
+            }
+        },
+        "picker": {
+            "color": {
+                "title": "Color picker",
+                "hexCode": "Color hex code"
             }
         }
     },
@@ -923,6 +934,7 @@
         "systemTheme": "System",
         "balance": "Saldo",
         "accountBalance": "Saldo da carteira",
+        "all": "All",
         "incoming": "Entradas",
         "outgoing": "Saídas",
         "totalIn": "Total recebido",
@@ -1003,6 +1015,7 @@
         "legacyNetwork": "Rede Legada",
         "capsLock": "O Caps Lock está ativado",
         "version": "Versão {version}",
+        "yourWallets": "Your Wallets",
         "unknown": "Unknown",
         "none": "None",
         "staked": "Staked",
@@ -1011,7 +1024,8 @@
         "unstaking": "Unstaking",
         "notStaked": "Not staked",
         "stakedFunds": "Staked funds",
-        "unstakedFunds": "Unstaked funds"
+        "unstakedFunds": "Unstaked funds",
+        "accountColor": "Wallet color"
     },
     "dates": {
         "today": "Hoje",
@@ -1093,6 +1107,7 @@
         "account": {
             "length": "Your wallet name can't be longer than {length, plural, one {# character} other {# characters}}.",
             "empty": "Deve usar a sua carteira mais recente antes de criar uma nova.",
+            "emptyName": "A profile name must contain at least 1 character.",
             "notEmpty": "Deve transferir o seu saldo antes de apagar esta carteira.",
             "duplicate": "Uma carteira com esse nome já existe.",
             "tilde": "O nome do perfil não pode começar com o caractere '~'.",
@@ -1258,6 +1273,12 @@
     "indicators": {
         "developerProfileIndicator": {
             "warningText": "You are currently using a developer profile and are connected to {networkName}"
+        }
+    },
+    "permissions": {
+        "camera": {
+            "request": "We need your permission to use your camera to be able to scan QR codes.",
+            "requestInAppSettings": "If you want to grant permission for using your camera to scan QR codes, please enable it in the app settings."
         }
     }
 }

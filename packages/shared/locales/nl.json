@@ -287,7 +287,7 @@
         "settings": {
             "settings": "Instellingen",
             "generalSettings": {
-                "title": "Algemene instellingen",
+                "title": "Algemeen",
                 "description": "Het uiterlijk van uw portemonnee en andere algemene instellingen configureren"
             },
             "security": {
@@ -295,7 +295,7 @@
                 "description": "Wijzig uw wachtwoord en pas de beveiligingsinstellingen aan"
             },
             "advancedSettings": {
-                "title": "Geavanceerde instellingen",
+                "title": "Geavanceerd",
                 "description": "Hulpmiddelen en handmatige instellingen voor technische gebruikers"
             },
             "helpAndInfo": {
@@ -350,6 +350,11 @@
                 "newPincode": "Nieuwe PIN",
                 "confirmNewPincode": "Bevestig nieuwe PIN",
                 "action": "Wijzig PIN"
+            },
+            "changeProfileName": {
+                "title": "Change profile name",
+                "description": "Change your Firefly profile name",
+                "success": "You changed your profile name"
             },
             "balanceFinder": {
                 "title": "Saldo zoeker",
@@ -526,6 +531,12 @@
                     "name": "Shimmer",
                     "description": "Hét ontwikkel netwerk voor belangrijke ontwikkelingen rond IOTA. Jij bepaalt de toekomst van Shimmer. Leer, bouw, verdien en groei met elkaar."
                 }
+            }
+        },
+        "picker": {
+            "color": {
+                "title": "Kleur kiezer",
+                "hexCode": "Kleur hex code"
             }
         }
     },
@@ -923,6 +934,7 @@
         "systemTheme": "Systeem",
         "balance": "Saldo",
         "accountBalance": "Portemonnee saldo",
+        "all": "Alle",
         "incoming": "Inkomend",
         "outgoing": "Uitgaand",
         "totalIn": "Totaal inkomend",
@@ -1003,6 +1015,7 @@
         "legacyNetwork": "Verouderd netwerk",
         "capsLock": "Caps Lock staat aan",
         "version": "Versie {version}",
+        "yourWallets": "Jouw wallets",
         "unknown": "Onbekend",
         "none": "Geen",
         "staked": "Gestaket",
@@ -1011,7 +1024,8 @@
         "unstaking": "Stoppen met staken",
         "notStaked": "Niet gestaked",
         "stakedFunds": "Gestaketet saldo",
-        "unstakedFunds": "Niet ingezet saldo"
+        "unstakedFunds": "Niet ingezet saldo",
+        "accountColor": "Kleur portemonnee"
     },
     "dates": {
         "today": "Vandaag",
@@ -1093,6 +1107,7 @@
         "account": {
             "length": "Je wallet naam kan niet langer zijn dan {length, plural, one {# karakter} other {# karakters}}.",
             "empty": "U moet uw laatste portemonnee gebruiken voordat u een nieuwe aanmaakt.",
+            "emptyName": "A profile name must contain at least 1 character.",
             "notEmpty": "U moet uw saldo overmaken voordat u deze portemonnee kunt verwijderen.",
             "duplicate": "Een portemonnee met deze naam bestaat al.",
             "tilde": "Een profielnaam kan niet beginnen met het teken '~'.",
@@ -1258,6 +1273,12 @@
     "indicators": {
         "developerProfileIndicator": {
             "warningText": "Je gebruikt momenteel een ontwikkelaarsprofiel en bent verbonden met {networkName}"
+        }
+    },
+    "permissions": {
+        "camera": {
+            "request": "We hebben je toestemming nodig om gebruik te maken van je camera voor het scannen van QR codes.",
+            "requestInAppSettings": "Als je toestemming wilt geven voor het gebruik van je camera zodat je QR codes kan scannen, schakel dit dan in in de instellingen van de app."
         }
     }
 }

@@ -287,7 +287,7 @@
         "settings": {
             "settings": "Seaded",
             "generalSettings": {
-                "title": "Üldised seaded",
+                "title": "General",
                 "description": "Configure your app's appearance and other general settings"
             },
             "security": {
@@ -295,7 +295,7 @@
                 "description": "Vaheta oma salasõna ja timmi turvasätteid"
             },
             "advancedSettings": {
-                "title": "Täpsemad seaded",
+                "title": "Advanced",
                 "description": "Tools and manual settings for technical users"
             },
             "helpAndInfo": {
@@ -313,7 +313,7 @@
             "theme": {
                 "title": "Kujundus",
                 "description": "",
-                "advice": "Restart the Firefly application for changes to the system theme to take effect"
+                "advice": "Please restart the Firefly application for changes to the system theme to take effect"
             },
             "language": {
                 "title": "Keel",
@@ -350,6 +350,11 @@
                 "newPincode": "Uus PIN-kood",
                 "confirmNewPincode": "Kinnita uus PIN",
                 "action": "Muuda PIN"
+            },
+            "changeProfileName": {
+                "title": "Change profile name",
+                "description": "Change your Firefly profile name",
+                "success": "You changed your profile name"
             },
             "balanceFinder": {
                 "title": "Kontojäägi otsija",
@@ -526,6 +531,12 @@
                     "name": "Shimmer",
                     "description": "The incentivized staging network to advance major innovations on IOTA. Whatever happens, happens. How Shimmer evolves is up to you."
                 }
+            }
+        },
+        "picker": {
+            "color": {
+                "title": "Color picker",
+                "hexCode": "Color hex code"
             }
         }
     },
@@ -923,6 +934,7 @@
         "systemTheme": "Süsteem",
         "balance": "Kontojääk",
         "accountBalance": "Wallet Balance",
+        "all": "All",
         "incoming": "Sissetulev",
         "outgoing": "Väljaminev",
         "totalIn": "Kokku sisse",
@@ -1003,6 +1015,7 @@
         "legacyNetwork": "Legacy Network",
         "capsLock": "Caps Lock on sees",
         "version": "Versioon {version}",
+        "yourWallets": "Your Wallets",
         "unknown": "Unknown",
         "none": "None",
         "staked": "Staked",
@@ -1011,7 +1024,8 @@
         "unstaking": "Unstaking",
         "notStaked": "Not staked",
         "stakedFunds": "Staked funds",
-        "unstakedFunds": "Unstaked funds"
+        "unstakedFunds": "Unstaked funds",
+        "accountColor": "Wallet color"
     },
     "dates": {
         "today": "Täna",
@@ -1093,6 +1107,7 @@
         "account": {
             "length": "Your wallet name can't be longer than {length, plural, one {# character} other {# characters}}.",
             "empty": "Sa pead olema kasutanud oma viimast rahakotti enne kui saad uue luua.",
+            "emptyName": "A profile name must contain at least 1 character.",
             "notEmpty": "Sa pead enne selle rahakoti kustutamist oma kontojäägi üle kandma.",
             "duplicate": "Selle nimega rahakott on juba olemas.",
             "tilde": "Profiilinimi ei saa alata tähemärgiga '~'.",
@@ -1258,6 +1273,12 @@
     "indicators": {
         "developerProfileIndicator": {
             "warningText": "You are currently using a developer profile and are connected to {networkName}"
+        }
+    },
+    "permissions": {
+        "camera": {
+            "request": "We need your permission to use your camera to be able to scan QR codes.",
+            "requestInAppSettings": "If you want to grant permission for using your camera to scan QR codes, please enable it in the app settings."
         }
     }
 }

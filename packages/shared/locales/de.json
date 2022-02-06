@@ -287,7 +287,7 @@
         "settings": {
             "settings": "Einstellungen",
             "generalSettings": {
-                "title": "Allgemeine Einstellungen",
+                "title": "Allgemein",
                 "description": "Passe das Erscheinungsbild deiner Wallet an und nimm weitere allgemeine Einstellungen vor"
             },
             "security": {
@@ -295,7 +295,7 @@
                 "description": "Ändere dein Passwort und passe sicherheitsrelevante Einstellungen an"
             },
             "advancedSettings": {
-                "title": "Erweiterte Einstellungen",
+                "title": "Erweitert",
                 "description": "Werkzeuge und Einstellungen für technisch versierte Benutzer"
             },
             "helpAndInfo": {
@@ -313,7 +313,7 @@
             "theme": {
                 "title": "Erscheinungsbild",
                 "description": "",
-                "advice": "Starte die Firefly Anwendung neu, damit Änderungen am System-Erscheinungsbild wirksam werden"
+                "advice": "Starte die Firefly-Anwendung neu, damit Änderungen am System-Erscheinungsbild wirksam werden"
             },
             "language": {
                 "title": "Sprache",
@@ -350,6 +350,11 @@
                 "newPincode": "Neue PIN",
                 "confirmNewPincode": "Neue PIN bestätigen",
                 "action": "PIN ändern"
+            },
+            "changeProfileName": {
+                "title": "Change profile name",
+                "description": "Change your Firefly profile name",
+                "success": "You changed your profile name"
             },
             "balanceFinder": {
                 "title": "Guthaben suchen",
@@ -526,6 +531,12 @@
                     "name": "Shimmer",
                     "description": "Das incentivierte Staging-Netzwerk, auf welchem wichtige Innovationen für IOTA vorangetrieben werden. Wie sich Shimmer in Zukunft entwickelt, liegt ganz bei dir. Alles ist möglich."
                 }
+            }
+        },
+        "picker": {
+            "color": {
+                "title": "Farbauswahl",
+                "hexCode": "Hex-Farbcode"
             }
         }
     },
@@ -923,6 +934,7 @@
         "systemTheme": "System",
         "balance": "Guthaben",
         "accountBalance": "Wallet Guthaben",
+        "all": "Alle",
         "incoming": "Eingehend",
         "outgoing": "Ausgehend",
         "totalIn": "Gesamt eingehend",
@@ -1003,6 +1015,7 @@
         "legacyNetwork": "Altes Netzwerk",
         "capsLock": "Feststelltaste ist aktiviert",
         "version": "Version {version}",
+        "yourWallets": "Deine Wallets",
         "unknown": "Unbekannt",
         "none": "Keine",
         "staked": "Gestaked",
@@ -1011,7 +1024,8 @@
         "unstaking": "Staking aufheben",
         "notStaked": "Nicht gestaked",
         "stakedFunds": "Gestaktes Guthaben",
-        "unstakedFunds": "Ungestaktes Guthaben"
+        "unstakedFunds": "Ungestaktes Guthaben",
+        "accountColor": "Wallet-Farbe"
     },
     "dates": {
         "today": "Heute",
@@ -1093,6 +1107,7 @@
         "account": {
             "length": "Der Name deiner Wallet darf nicht länger als {length, plural, one {1 Zeichen} other {# Zeichen}} sein.",
             "empty": "Du musst deine letzte Wallet erst verwenden, bevor du eine neue erstellen kannst.",
+            "emptyName": "A profile name must contain at least 1 character.",
             "notEmpty": "Du musst dein Guthaben übertragen, bevor diese Wallet gelöscht werden kann.",
             "duplicate": "Eine Wallet mit diesem Namen existiert bereits.",
             "tilde": "Ein Profilname darf nicht mit dem Zeichen '~' beginnen.",
@@ -1258,6 +1273,12 @@
     "indicators": {
         "developerProfileIndicator": {
             "warningText": "Du verwendest derzeit ein Entwicklerprofil und bist mit {networkName} verbunden"
+        }
+    },
+    "permissions": {
+        "camera": {
+            "request": "Wir benötigen deine Erlaubnis, die Kamera zu nutzen, um QR-Codes zu scannen.",
+            "requestInAppSettings": "Wenn du die Verwendung deiner Kamera zum scannen von QR-Codes erlauben möchtest, aktiviere dies bitte in den App-Einstellungen."
         }
     }
 }
