@@ -6,11 +6,11 @@ on:
             debugElectronBuilder:
                 description: 'Verbose electron-builder output'
                 required: true
-                default: 'false'
+                default: 'true'
             stage:
                 description: 'Stage (alpha, beta, or prod)'
                 required: true
-                default: 'prod'
+                default: 'alpha'
             os:
                 description: 'OS (macos-11, ubuntu-20.04, windows-2019)'
                 required: true
