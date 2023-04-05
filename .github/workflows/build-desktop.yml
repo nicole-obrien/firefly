@@ -47,7 +47,7 @@ jobs:
         needs: [setup]
         strategy:
             matrix:
-                os: [ ${{ github.event.inputs.os }} ]
+                os: ${{ github.event.inputs.os }}
             fail-fast: false
         env:
             VERSION: ${{ needs.setup.outputs.version }}
