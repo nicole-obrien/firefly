@@ -43,7 +43,7 @@
         "copy-webpack-plugin": "^7.0.0",
         "cross-env": "^7.0.2",
         "css-loader": "^5.0.1",
-        "electron": "22.3.5",
+        "electron": "41.10.6",
         "electron-builder": "^24.0.0",
         "electron-notarize": "^1.0.0",
         "esbuild-loader": "^3.0.0",
@@ -54,6 +54,6 @@
         "postcss-url": "^10.1.2",
         "webpack": "^5.76.0",
         "webpack-cli": "^4.10.0",
-        "webpack-dev-server": "^4.0.0"
+        "webpack-dev-server": "^5.2.6"
     }
 }
